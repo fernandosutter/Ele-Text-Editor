@@ -26,10 +26,13 @@ def newFileHK(self):
 
 def saveFileHK(self):
 	global filename
-	t = text.get(0.0, END)
-	f = open(filename, "w")
-	f.write(t)
-	f.close()
+	if filename == None:
+		saveAs(self)
+	else:
+		t = text.get(0.0, END)
+		f = open(filename, "w")
+		f.write(t)
+		f.close()
 
 def saveAsHK(self):
 	f = filedialog.asksaveasfile(mode='w', defaultextension='.txt')
@@ -55,10 +58,13 @@ def newFile():
 
 def saveFile():
 	global filename
-	t = text.get(0.0, END)
-	f = open(filename, "w")
-	f.write(t)
-	f.close()
+	if filename == None:
+		saveAs(self)
+	else:
+		t = text.get(0.0, END)
+		f = open(filename, "w")
+		f.write(t)
+		f.close()
 
 def saveAs():
 	f = filedialog.asksaveasfile(mode='w', defaultextension='.txt')
