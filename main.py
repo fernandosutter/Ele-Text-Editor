@@ -18,6 +18,66 @@ def fontGothic():
 	global text
 	text.config(font="Gothic")
 
+def comicsansms():
+    global text
+    text.config(font="{Comic Sans MS}")
+
+def couriernew():
+    global text
+    text.config(font="{Courier New}")
+
+def georgia():
+    global text
+    text.config(font="{Georgia}")
+
+def impact():
+    global text
+    text.config(font="{Impact}")
+
+def lucidaconsole():
+    global text
+    text.config(font="{Lucida Console}")
+
+def lucidaunicode():
+    global text
+    text.config(font="{Lucida Sans Unicode}")
+
+def palatino():
+    global text
+    text.config(font="{Palatino Linotype}")
+
+def tahoma():
+    global text
+    text.config(font="{Tahoma}")
+
+def trebuchet():
+    global text
+    text.config(font="{Trebuchet}")
+
+def verdana():
+    global text
+    text.config(font="{Verdana}")
+
+def symbol():
+    global text
+    text.config(font="{Symbol}")
+
+def webdings():
+    global text
+    text.config(font="{Webdings}")
+
+def wingdings():
+    global text
+    text.config(font="{Wingdings}")
+
+def mssans():
+    global text
+    text.config(font="{MS Sans}")
+
+def msserif():
+    global text
+    text.config(font="{MS Serif}")
+
 #Hotkeys
 def newFileHK(self):
 	global filename
@@ -116,6 +176,23 @@ formatOptions.add_command(label="Arial", command=fontArial)
 formatOptions.add_command(label="Helvetica", command=fontHelvetica)
 formatOptions.add_command(label="Times New Roman", command=fontTNR)
 formatOptions.add_command(label="Gothic", command=fontGothic)
+formatOptions.add_separator()
+formatOptions.add_command(label="Georgia", command=georgia)
+formatOptions.add_command(label="Trebuchet MS", command=trebuchet)
+formatOptions.add_command(label="Verdana", command=verdana)
+formatOptions.add_command(label="MS Sans Serif", command=mssans)
+formatOptions.add_command(label="Comic Sans MS", command=comicsansms)
+formatOptions.add_command(label="Courier New", command=couriernew)
+formatOptions.add_command(label="Impact", command=impact)
+formatOptions.add_command(label="Lucida Console", command=lucidaconsole)
+formatOptions.add_command(label="Lucida Sans Unicode", command=lucidaunicode)
+formatOptions.add_command(label="Plalatino Linotype", command=palatino)
+formatOptions.add_command(label="Tahoma", command=tahoma)
+formatOptions.add_command(label="Symbol", command=symbol)
+formatOptions.add_command(label="Webdings", command=webdings)
+formatOptions.add_command(label="Wingdings", command=wingdings)
+formatOptions.add_command(label="MS Serif", command=msserif)
+
 menubar.add_cascade(label="Font", menu=formatOptions)
 ###################################################################
 
