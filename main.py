@@ -198,3 +198,4 @@ menubar.add_cascade(label="Font", menu=formatOptions)
 
 root.config(menu=menubar)
 root.mainloop()
+
